@@ -1,0 +1,154 @@
+/* Remove default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Whole page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #202122;
+}
+
+
+/* Main Wikipedia-like page */
+.wiki-page {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+
+/* Featured article box */
+.featured-section {
+    background-color: #f0fff9;
+    border: 1px solid #a2d5c0;
+    padding: 10px;
+}
+
+
+/* Green heading */
+.featured-section h2,
+.did-you-know h2 {
+    font-size: 24px;
+    background-color: #d2f2e3;
+    border: 1px solid #a2d5c0;
+
+    padding: 8px 10px;
+    margin-bottom: 20px;
+
+    color: #111;
+}
+
+
+/* Image + article */
+.featured-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+
+/* Image container */
+.featured-image {
+    width: 145px;
+    flex-shrink: 0;
+}
+
+
+/* Actual image */
+.featured-image img {
+    width: 145px;
+    height: 213px;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Image caption */
+.featured-image figcaption {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+
+/* Article text */
+.article-text {
+    flex: 1;
+}
+
+
+/* Paragraph */
+.article-text p {
+    font-size: 18px;
+    line-height: 1.65;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+
+/* Links */
+a {
+    color: #36c;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Bottom links */
+.featured-links {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Did You Know */
+.did-you-know {
+    margin-top: 10px;
+}
+
+
+.did-you-know h2 {
+    margin-bottom: 0;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 650px) {
+
+    .wiki-page {
+        margin: 10px;
+    }
+
+    .featured-content {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        width: 120px;
+    }
+
+    .featured-image img {
+        width: 120px;
+        height: auto;
+    }
+
+    .article-text p {
+        font-size: 16px;
+    }
+
+    .featured-links {
+        font-size: 15px;
+    }
+}

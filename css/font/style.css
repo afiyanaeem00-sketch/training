@@ -1,0 +1,29 @@
+/* CSS boiler plate */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.box
+{
+    width : 100%;
+    height : 300px;
+    background-color:aquamarine;
+    font-size: 30px;
+    font-weight: 500;
+    font-style:oblique;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: "Syne Tactile", system-ui;
+    /* google font */
+    /* kisi bi website ka font use krlo */
+
+}

@@ -1,0 +1,162 @@
+div<!DOCTYPE html>       <!-- Tells html version to use  -->
+<html lang="en">      <!-- attributes for the html tag, lang specifies the language of the document -->
+<head>                <!-- Metadata about the document, such as title, character set, styles, and scripts -->
+    <meta charset="UTF-8">        <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures page is responsive & scales correctly on different devices -->
+    <title>HTML</title>       <!-- Specifies the title of the document, which appears in the browser tab -->
+    <style>
+        .box{
+            background-color: bisque;
+            margin :auto;
+        }
+    </style>
+</head>
+<>
+    <!--            SEO -> Search Engine Optimization, which is the practice of optimizing web pages to rank higher in search engine results and increase organic traffic. It involves various techniques such as keyword research, content optimization, link building, and improving website performance.
+    tags - fundamental building blocks of HTML that define the structure and content of a web page. Examples include <p> for paragraphs, <h1> to <h6> for headings, <a> for links, and <img> for images.
+    Tags - opening and closing(Paired, dual)  &  self closing (void) tags. Paired tags have an opening tag and a closing tag, while self-closing tags do not require a closing tag and are used for elements that do not have any content, such as <img> or <br>.
+    elements - HTML elements are the building blocks of web pages, represented by tags and their content. They can be categorized into two main types: block-level elements and inline elements.
+    inline elements - HTML elements that are displayed within the flow of text and do not start on a new line. Examples include <span>, <a>, and <strong>.
+    block elements - HTML elements that start on a new line and take up the full width available. Examples include <div>, <p>, and <h1> to <h6>.
+    <h1> to <h6> depends on SEO</h6></h1>             
+    <p></p><pre></pre>(<anchor></anchor>- LINKS)           -->
+    <div style = "background-color: aliceblue;"> Vanshika </div>
+    <a href = "about.html" title = "About Trainx" target = "_blank">About</a>
+    <img src = "https://www.w3schools.com/html/pic_trulli.jpg" alt = "Trulli" width = "200px" height = "200px">
+    <meta nsame = "keywords" content = "HTML, CSS, JavaScript">
+    <div class = "box txt img" id = "box1"></div>
+    <!-- non semantic -- div span -->
+    <h1>SEMANTIC TAGS</h1>
+    <!-- <pre>
+        <header></header>
+        <footer></footer>
+        <section></section>
+        <nav>application links</nav>
+        <aside></aside>
+        <article></article>
+        <main>used only once in main heading of a website.....</main>
+    </pre> -->
+<!-- <header class = "txt">
+    <div>
+        <div>
+            <p style = "background-color: yellow;">Flipcart</p>
+            <p style = "background-color: lightgray;">Travel</p>
+            
+        </div>
+        <div>
+        </div>
+    </div>
+</header>
+<div>
+    
+    <div>
+        <span style = "background-color: lightblue;">Search</span>
+        <span style = "background-color: lightblue;">Login</span>
+        <span style = "background-color: lightblue;">More</span>
+        <span style = "background-color: lightgray;">Cart</span>
+    </div>
+</div>
+<div>
+    <nav>
+        <a href = "https://www.flipkart.com/">For You</a>
+        <a href = "https://www.flipkart.com/ss-26-base-inline-at-store">Fashion</a>    
+        <a href = "https://www.flipkart.com/mobile-phones-store">Mobiles</a>    
+        <a href="https://www.flipkart.com/new-elec-clp-march-at-store">Electronics</a>   
+        <a href="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/beauty.svg">Beauty</a>   
+        <a href="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/home-final.svg">Home</a>   
+        <a href="https://www.flipkart.com/tv-and-app-bau-clp-at-store">Appliances</a>   
+        <a href="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg">Toys&baby</a>   
+        <a href="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/food.svg">Food & Health</a>             
+        </nav>
+</div>
+<img src = "https://rukminim1.flixcart.com/fk-p-flap/940/460/image/d2538f3149750a8f.png?q=60" alt = "Image" width = "200px" height = "200px"> -->
+<!-- LIST -->
+
+<ul type = "circle">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Node.js</li>
+</ul>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Node.js</li>
+</ol>
+<dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <dt>JavaScript</dt>
+    <dd>A programming language for web development</dd>
+</dl>
+<div class="box"></div>    <!-- .box*2 --> 
+<div class="box"></div>    <!-- .box*2 --> 
+
+<!-- TABLE -->
+<table border = "1" cellpadding = "10" cellspacing = "10">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Mobile</th>
+        </tr>
+
+    </thead>
+    <tr>
+        <td>Vanshika</td>
+        <td>153</td>
+        <td>9997767823</td>
+    </tr>
+    <tr>
+        <td>Anshika</td>
+        <td>154</td>
+        <td>9995464823</td>
+    </tr>
+    <tr>
+        <td>Ansh</td>
+        <td>155</td>
+        <td>4565453423</td>
+    </tr>
+    <tr>
+        <td colspan = "3">Ansh</td>
+        <!-- <td rowspan = "3">Ansh</td> -->
+    </tr>
+    <tr>
+        <td rowspan = "3">Vanshika</td>
+    </tr>
+
+</table>
+
+<form action = "../list/index.html" method = "post">
+    <label for = "Name">User Name : </label>
+    <input type = "text" name = "Name" placeholder = "Name" id = "Name" required>
+    <input type = "password" name = "Password" placeholder = "Password" id = "Password">
+    <input type = "email" name = "Email" placeholder = "Email" id = "Email">
+    <input type = "submit" value = "Submit">    
+    <input type = "checkbox">
+    <input type = "date">
+    <input type = "datetime-local">
+    <input type = "file">
+    <input type = "color">
+    <select name = "cars" id = "cars">
+        <option value = "volvo">Volvo</option>
+        <option value = "mercedes">Mercedes</option>
+        <option value = "audi">Audi</option>
+    </select>
+</form>
+<!-- <video src = "./about.html" controls autoplay muted loop width = "400px" height = "400px"></video> -->
+<video controls>
+    <source src = "./about.html" type = "video/mp4">
+</video>
+<audio src = "./file_example_WAV_1MG.wav" controls autoplay></audio>
+
+</body>
+</html>
+<!-- select + ctrl + d -->
+<!-- Alt + mouse (click)-->
